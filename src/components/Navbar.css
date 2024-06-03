@@ -1,0 +1,64 @@
+/* General Navbar styles */
+.navbar {
+  background-color: #000000; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  width: 100%; 
+  padding: 15px 0;
+  top: 0; 
+  z-index: 2; 
+}
+
+.navbar-container {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  width: 100%; 
+}
+
+.navbar-items {
+  display: flex; 
+  gap: 20px; 
+  align-items: center; 
+}
+
+.link {
+  position: relative; 
+  text-decoration: none; 
+  color: whitesmoke; 
+  user-select: none; 
+  transition: color 0.3s ease; 
+}
+
+.link.active {
+  color: #007bff; 
+}
+
+.link:hover {
+  color: #007bff; 
+}
+
+.home {
+  margin: 0; 
+  color: white; 
+  font-size: 1.5rem; 
+  line-height: 2rem; 
+}
+
+/* Responsive styles for screens with max width 798px */
+@media screen and (max-width: 798px) {
+  .navbar {
+    padding: 15px 30px; 
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-items {
+    flex-direction: column; 
+    width: 100%; 
+  }
+}

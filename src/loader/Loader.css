@@ -1,0 +1,65 @@
+/* Container for the loader, taking up most of the viewport */
+.loading {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Loader styles */
+.loader {
+  --s: 20px; /* Size variable */
+  color: #ffffff;
+  position: absolute;
+  z-index: 2;
+  --_d: calc(0.353 * var(--s)); /* Derived size variable */
+  width: calc(var(--s) + var(--_d));
+  aspect-ratio: 1; /* Square aspect ratio */
+  display: grid;
+}
+
+/* Loader before and after pseudo-elements */
+.loader:before,
+.loader:after {
+  content: "";
+  grid-area: 1/1;
+  clip-path: polygon(
+    var(--_d) 0,
+    100% 0,
+    100% calc(100% - var(--_d)),
+    calc(100% - var(--_d)) 100%,
+    0 100%,
+    0 var(--_d)
+  ); /* Clip path for loader shape */
+  background: conic-gradient(
+    from -90deg at calc(100% - var(--_d)) var(--_d),
+    #fff 135deg,
+    #666 0 270deg,
+    #aaa 0
+  ); /* Conic gradient for loader color */
+  animation: l6 2s infinite; /* Animation for loader */
+}
+
+.loader:after {
+  animation-delay: -1s; /* Delay the after pseudo-element animation */
+}
+
+/* Keyframes for the loader animation */
+@keyframes l6 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(30px, 0);
+  }
+  50% {
+    transform: translate(30px, 30px);
+  }
+  75% {
+    transform: translate(0, 30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

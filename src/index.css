@@ -1,0 +1,25 @@
+/* Global CSS styles */
+
+/* Box-sizing reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Set margin and font-family for HTML and body */
+html,body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Set height and width for the root element */
+#root {
+  height: 100%;
+  width: 100%;
+}

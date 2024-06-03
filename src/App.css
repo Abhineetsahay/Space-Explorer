@@ -1,0 +1,5 @@
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100%; /* Optionally, set height to 100% if you want the container to cover the entire viewport */
+}

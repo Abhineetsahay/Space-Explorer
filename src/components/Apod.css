@@ -1,0 +1,184 @@
+/* Main container for the APOD component */
+.apod {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Container for date input field */
+.get-date {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Label for date input */
+.label {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Styling for date input field */
+.get-date input[type="date"] {
+  padding: 10px;
+  font-size: 1em;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Styling for date input field on focus */
+.get-date input[type="date"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+  outline: none;
+}
+
+/* Placeholder color for date input field */
+.get-date input[type="date"]::placeholder {
+  color: #999;
+}
+
+/* Container for APOD items */
+.apod-items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container for individual APOD component */
+.apod-compo {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Container for image */
+.image-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for the APOD image */
+.image {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* Container for details section */
+.details {
+  width: 100%;
+  max-width: 1000px;
+  text-align: start;
+  color: white;
+}
+
+/* Styling for the title */
+.title {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 600;
+  filter: drop-shadow(2px 0px 1px #000000);
+}
+
+/* Styling for the date */
+.date {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+/* Container for like and share buttons */
+.like-share {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Styling for like and share buttons */
+.like-button,
+.share-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styling for like and share icons */
+.like,
+.share {
+  color: white;
+  height: 40px;
+  width: 40px;
+}
+
+/* Styling for the explanation text */
+.explanation {
+  font-size: 1.2em;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5em;
+  }
+
+  .date {
+    font-size: 1em;
+  }
+
+  .explanation {
+    font-size: 1em;
+  }
+
+  .like,
+  .share {
+    height: 30px;
+    width: 30px;
+  }
+
+  .like-share {
+    gap: 10px;
+  }
+}
+
+/* Further responsive styling for very small screens */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.2em;
+  }
+
+  .date {
+    font-size: 0.8em;
+  }
+
+  .explanation {
+    font-size: 0.9em;
+  }
+
+  .like,
+  .share {
+    height: 25px;
+    width: 25px;
+  }
+
+  .like-share {
+    gap: 5px;
+  }
+}

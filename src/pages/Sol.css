@@ -1,0 +1,52 @@
+/* CSS for Sol Information page */
+
+/* Main container styles */
+.Sol-main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: absolute;
+  z-index: 2;
+}
+
+/* Container for sol information */
+.sol-information {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.sol-information h2 {
+  color: #333;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Paragraph styles */
+.sol-information p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* Link styles */
+.sol-information a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.sol-information a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}

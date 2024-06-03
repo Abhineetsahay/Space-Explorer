@@ -1,0 +1,171 @@
+/* Container for the entire home page */
+.Home-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+/* Styles for the background canvas */
+.background-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  background: black;
+}
+
+/* Styles for the progress bar */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: #ffffff;
+  transform-origin: 0%;
+  z-index: 2;
+}
+
+/* Container for the details section of the home page */
+.Home-page-details {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px; 
+}
+
+/* Styles for the heading details section */
+.heading-details {
+  margin-left: 10px;
+}
+
+/* Styles for each home detail section */
+.home-details {
+  height: auto;
+  margin: 50px 0px;
+  padding: 20px 0; 
+  width: 100%;
+  max-width: 1200px; 
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a1a1a99;
+  transition: transform 1s ease;
+}
+
+/* Specific style for the fifth home detail section */
+.home-details:nth-child(5) {
+  height: auto;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 1028px) {
+  .home-details {
+    flex-direction: column;
+    gap: 20px;
+    width: 90%; 
+  }
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 1200px) {
+  .home-details {
+    height: 100vh;
+    width: 100%;
+    padding: 100px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* Styles for the heading */
+.Heading {
+  color: #ffffff;
+  font-size: 36px; 
+  text-align: left;
+  margin: 0;
+}
+
+/* Increase font size for larger screens */
+@media screen and (min-width: 1200px) {
+  .Heading {
+    font-size: 60px;
+  }
+}
+
+/* Styles for the description text */
+.details-Home {
+  width: 100%;
+  text-align: left;
+  color: #cccccc;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* Increase font size for larger screens */
+@media screen and (min-width: 1200px) {
+  .details-Home {
+    font-size: 28px;
+  }
+}
+
+/* Styles for the image in the details section */
+.Home-page-details-image {
+  max-height: 400px; 
+  max-width: 100%;
+  object-fit: cover; 
+  border-radius: 12px;
+}
+
+/* Increase image size for smaller screens */
+@media screen and (max-width: 720px) {
+  .Home-page-details-image {
+    max-width: 90%; 
+  }
+}
+
+/* Increase image size for larger screens */
+@media screen and (min-width: 1200px) {
+  .Home-page-details-image {
+    max-width: 900px;
+    width: 100%;
+  }
+}
+
+/* Styles for the link */
+.sol-about {
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Increase font size for larger screens */
+@media screen and (min-width: 1200px) {
+  .sol-about {
+    font-size: 24px;
+  }
+}
+
+/* Hover styles for the link */
+.sol-about:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}

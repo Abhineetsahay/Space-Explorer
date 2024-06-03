@@ -1,0 +1,32 @@
+/* Container for the footer */
+.footer-container {
+  background-color: #222; 
+  padding: 20px 0; 
+  width: 100%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  position: absolute; 
+  z-index: 2; 
+}
+
+/* Container for the footer links */
+.links-footer {
+  display: flex; 
+  justify-content: space-around; 
+  width: 100%; 
+}
+
+/* Styling for individual footer links */
+.link-home-element {
+  text-decoration: none; 
+  color: #fff; 
+  font-size: 18px; 
+  transition: color 0.3s ease, text-decoration 0.3s ease; 
+}
+
+/* Hover state for the footer links */
+.link-home-element:hover {
+  color: #e2dadb; 
+  text-decoration: underline; 
+}

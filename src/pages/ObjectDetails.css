@@ -1,0 +1,54 @@
+.object-details {
+  /* Styles for the container of the object details */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 2;
+}
+
+.object-details-container {
+  /* Styles for the container of the object details */
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.object-details-container h1 {
+  /* Styles for the heading of the object details */
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.object-details-container p {
+  /* Styles for paragraphs within the object details */
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #666;
+}
+
+.object-details-container a {
+  /* Styles for links within the object details */
+  display: block;
+  margin-top: 20px;
+  font-size: 1em;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.object-details-container a:hover {
+  /* Hover styles for links within the object details */
+  text-decoration: underline;
+}
