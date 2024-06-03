@@ -10,7 +10,7 @@
   z-index: 1;
 }
 
-/* Styles for the background canvas */
+/* Styles for the background canvas */ 
 .background-canvas {
   position: fixed;
   top: 0;
@@ -87,6 +87,7 @@
     padding: 100px;
     flex-direction: column;
     justify-content: center;
+    gap: 10px;
   }
 }
 
@@ -125,7 +126,7 @@
 
 /* Styles for the image in the details section */
 .Home-page-details-image {
-  max-height: 400px; 
+  max-height: 250px; 
   max-width: 100%;
   object-fit: cover; 
   border-radius: 12px;
@@ -141,8 +142,8 @@
 /* Increase image size for larger screens */
 @media screen and (min-width: 1200px) {
   .Home-page-details-image {
-    max-width: 900px;
-    width: 100%;
+    max-width: 700px;
+    
   }
 }
 
